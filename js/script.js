@@ -66,7 +66,7 @@ function questionClick(event) {
     //check for wrong answer
     if (buttonEL.value !== questions[currentQuestionIndex].answer) {
         //reduce time remaining
-        time -= 10;
+        time -= 20;
 
         if (time < 0) {
             time = 0;
