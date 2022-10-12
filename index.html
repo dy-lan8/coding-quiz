@@ -7,27 +7,39 @@
     <title>Code Quiz!</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <!-- added high score and timer to header-->
-        <p class = 'timer' style="text-align: right;"></p>
-        <p a href="high-score">High Scores</p>
-    </header>
+     <!-- added high score and timer-->
+    <div class="high-score"><a href="highscores.html">High Scores</a></div>
+       
+    <div class ='timer'>Time: <span id='time'>0</span></div>
+        
+       <div class="wrap">
+        <div id="start-screen" class="start">
+            <h1>code quiz!</h1>
+            <p>
+                Try to answer these fun trivia questions before time expires. Wrong answers will penalize your timer and score by 10!
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
 
-    <main>
-        <section class="question-box">
-            <dialog class="question"></dialog>
-        </section>
+       <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+       </div>
+       <div id="end-screen" class="hide">
+        <h2>~Finish~</h2>
+        <p> Your final score is <span id="final-score"></span>.</p>
+        <p>
+            Enter intials: <input type="text" id="initials" max="4" />
+            <button id="submit">Submit!</button>
+        </p>
+       </div>
 
-        <section class="answer-choice">
-            <button id="choiceA">1</button>
-            <button id="choiceB">2</button>
-            <button id="choiceC">3</button>
-            <button id="choiceD">4</button>
-        </section>
-    </main>
+       <div id="feedback" class="feedback hide"></div>
+       </div>
 
-    
-    <script src="./script.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

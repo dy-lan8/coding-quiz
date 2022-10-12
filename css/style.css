@@ -1,16 +1,89 @@
-.header{
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+  }
+  
+  a {
+    color: rgba(28, 148, 68, 0.867);
+    text-decoration: none;
+    transition: color 0.1s;
+  }
+  
+  a:hover {
+    color: #3c99d6;
+  }
+  
+  button {
     display: inline-block;
-    
-}
-
-button {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    color: black;
-    border: 5px solid gray;
-    margin: 20px;
-    padding: 40px;
-    width: 300px ;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    background-color: rgba(28, 148, 68, 0.867);
     border-radius: 16px;
-}
+    padding: 2px 10px;
+    color: white;
+    border: 0;
+    transition: background-color 0.1s;
+  }
+  
+  button:hover {
+    background-color: #3c99d6;
+  }
+  
+  .choices button {
+    display: block;
+  }
+  
+  input[type="text"] {
+    font-size: 100%;
+  }
+  
+  ol {
+    padding-left: 0px;
+    max-height: 400px;
+    overflow: auto;
+  }
+  
+  li {
+    padding: 5px;
+    list-style: decimal inside none;
+  }
+  
+  li:nth-child(odd) {
+    background-color: #f3edfc;
+  }
+  
+  .wrap {
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .start {
+    text-align: center;
+  }
+  
+  .scores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: rgb(105, 139, 124);
+    border-top: 2px solid #ccc;
+  }
+  
+  .timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
